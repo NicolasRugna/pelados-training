@@ -25,3 +25,5 @@ $ npm install
 ```
 $ npm run serve
 ```
+
+4. Go to `localhost:3000/` to see the page working.
