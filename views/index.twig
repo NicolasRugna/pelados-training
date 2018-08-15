@@ -1,6 +1,24 @@
 {% extends 'layout.twig' %}
 
+{% block styles %}
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+{% endblock %}
+{% block plugins %}
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+{% endblock %}
+
 {% block body %}
-  <h1>{{title}}</h1>
-  <p>Welcome to {{title}}</p>
+    <audio src="/audio/molotov-fire.mp3" autoplay="true" loop="true" hidden></audio>
+    <img class="logo" src="/images/logo.png"/>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            const logo = document.querySelector('.logo');
+            if (logo) {
+                logo.addClass('logo-animation')
+            }
+        });
+    </script>
 {% endblock %}
