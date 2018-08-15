@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "serve": "node ./bin/www"
+    "start": "opn http://localhost:3000 && node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -13,5 +13,9 @@
     "morgan": "~1.9.0",
     "node-sass-middleware": "0.11.0",
     "twig": "~0.10.3"
+  },
+  "devDependencies": {
+    "express-reload": "^1.1.0",
+    "opn-cli": "^3.1.0"
   }
 }

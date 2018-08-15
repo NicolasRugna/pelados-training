@@ -23,7 +23,7 @@ $ npm install
 
 3. Start project.
 ```
-$ npm run serve
+$ npm run start
 ```
 
 4. Go to `localhost:3000/` to see the page working.
